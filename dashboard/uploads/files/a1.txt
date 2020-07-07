@@ -1,0 +1,31 @@
+<?php
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, "https://api.heymarket.com/v1/message/send");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+curl_setopt($ch, CURLOPT_POST, TRUE);
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, "{
+  \"activity_id\": \"voluptate qui adipisicing irure dolore\",
+  \"chat_id\": 98963442,
+  \"creator_id\": 46721620,
+  \"inbox_id\": 61771037,
+  \"list_id\": -59262119,
+  \"local_id\": \"deserunt\",
+  \"media_url\": \"sint in est amet\",
+  \"phone_number\": \"dolor velit sunt\",
+  \"template_id\": -38765687,
+  \"text\": \"laboris minim qui quis dolor\"
+}");
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+  "Content-Type: application/json",
+  "Accept: application/json"
+));
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+var_dump($response);

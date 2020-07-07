@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  Elements > code & pre
+\*------------------------------------*/
+
+pre,
+code {
+  font-family: $font-monospace;
+  background-color: $bg-gray;
+}
+
+pre {
+  overflow: auto;
+  padding: double($base-spacing-unit);
+  font-size: $font-size-medium;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  .rtl & {
+    direction: rtl;
+  }
+}
+
+p code { padding: half(quarter($base-spacing-unit)) quarter($base-spacing-unit); }

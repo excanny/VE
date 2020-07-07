@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  Components > Search Toggle Icon
+\*------------------------------------*/
+
+.c-search-toggle {
+  cursor: pointer;
+
+  @include mq($until: tablet) {
+    margin-top: $base-spacing-unit;
+  }
+
+  &__icon {
+    vertical-align: middle;
+    transition: $global-transition;
+
+    @include attention() {
+      fill: $color-brand;
+    }
+  }
+}

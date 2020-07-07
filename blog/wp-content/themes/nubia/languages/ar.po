@@ -1,0 +1,295 @@
+# Copyright (C) 2018 Aspire Themes
+msgid ""
+msgstr ""
+"Project-Id-Version: Nubia Theme 1.0.2\n"
+"Report-Msgid-Bugs-To: aspirethemes@gmail.com\n"
+"POT-Creation-Date: 2018-06-16 19:02:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-04-16 21:57+0800\n"
+"Language-Team: Aspire Themes <aspirethemes@gmail.com>\n"
+"X-Generator: Poedit 2.2.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n"
+"%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Language: ar\n"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "انتقل إلى المحتوى"
+
+#: navigation.php:11
+msgid "Primary Navigation"
+msgstr "القائمة الرئيسية"
+
+#: template-parts/post-card.php:14
+msgid "Featured Post"
+msgstr "مقال مميز"
+
+#. translators: %s: Name of current post
+#: page.php:44
+#, php-format
+msgid "Edit %s"
+msgstr "تحرير %s"
+
+#: comments.php:28
+msgid "Comments"
+msgstr "التعليقات"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "التعليقات مغلقة."
+
+#: 404.php:31 inc/widgets/nubia-recent-posts.php:29
+msgid "Recent Posts"
+msgstr "أحدث المقالات"
+
+#: template-parts/404-header.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "معذرة، هذه الصفحة غير موجودة!"
+
+#: template-parts/comments-navigation.php:11
+msgid "Comment navigation"
+msgstr "الإنتقال بين التعليقات"
+
+#: template-parts/comments-navigation.php:16
+msgid "Older Comments"
+msgstr "تعليقات أقدم"
+
+#: template-parts/comments-navigation.php:22
+msgid "Newer Comments"
+msgstr "تعليقات أحدث"
+
+#: template-parts/search-modal-form.php:15
+msgid "Type and hit enter"
+msgstr "اكتب و اضغط إنتر للبحث"
+
+#: template-parts/search-modal-form.php:15
+msgid "Search"
+msgstr "البحث"
+
+#: template-parts/search-header.php:15
+msgid "Search Results for: %s"
+msgstr "نتائج البحث عن: %s"
+
+#: author.php:39
+msgid "No posts by this author."
+msgstr "لا توجد مقالات لهذا الكاتب"
+
+#: template-parts/content-none.php:17
+msgid "Nothing Found"
+msgstr "لم يتم العثور على شيء"
+
+#: template-parts/no-results.php:13
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "هل أنت مستعد لنشر أول مقالة? <a href=\\”%1$s\\”>ابدأ من هنا</a>."
+
+#: template-parts/no-results.php:19
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"معذرة، لم نجد ما هو متوافق مع ما تبحث عنه، يرجى إعادة محاولة بكتابة كلمات "
+"مفتاحية مختلفة"
+
+#: template-parts/no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "يبدو أننا لم نجد ما تبحث عنه. ربما عملية البحث ستساعدك أكثر."
+
+#: template-parts/wp-link-pages.php:12
+msgid "Pages:"
+msgstr "الصفحات:"
+
+#: template-parts/post-navigation.php:12
+msgid "Next"
+msgstr "المقال التالي"
+
+#: template-parts/post-navigation.php:13
+msgid "Next post:"
+msgstr "المقال التالي:"
+
+#: template-parts/post-navigation.php:15
+msgid "Previous"
+msgstr "المقال السابق"
+
+#: template-parts/post-navigation.php:16
+msgid "Previous post:"
+msgstr "المقال السابق:"
+
+#: customizer/customizer.php:25
+msgid "Display Search Icon"
+msgstr "إظهار أيقونة البحث"
+
+#: customizer/customizer.php:39
+msgid "Footer Copyright"
+msgstr "نص حقوق الملكية المتواجد في أسفل الموقع"
+
+#: customizer/customizer.php:40
+msgid "Customize the footer copyright text. (HTML is allowed)"
+msgstr "تعديل نص حقوق الملكية المتواجد في أسفل الموقع (يمكن كتابة HTML)"
+
+#: customizer/customizer.php:53
+msgid "Brand Color"
+msgstr "اللون العام"
+
+#: customizer/customizer.php:53
+msgid "Homepage 3 Column Grid for Recent Posts"
+msgstr "عرض التدونات الأخيرة في شكل ٣ أعمدة في الصفحة الرئيسية"
+
+#: functions.php:63
+msgid "Primary Menu"
+msgstr "القائمة الرئيسية"
+
+#: functions.php:64
+msgid "Social Menu"
+msgstr "قائمة التواصل الاجتماعي"
+
+#: functions.php:212
+msgid "Reply to"
+msgstr "الرد على"
+
+#: functions.php:224
+msgid "Comment"
+msgstr "التعليق"
+
+#: functions.php:242
+msgid "Name"
+msgstr "الاسم"
+
+#: functions.php:245
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: functions.php:248
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#: functions.php:284
+msgid "You Might Be Interested In"
+msgstr "مقالات أخرى قد تهمك"
+
+#: functions.php:341
+msgid "Post Sidebar"
+msgstr "الشريط الجانبي للمقال"
+
+#: functions.php:343
+msgid "Add widgets here to appear in single post page sidebar."
+msgstr "‫أضف ودجات هنا لكي تظهر في ‫الشريط الجانبي للمقال"
+
+#: functions.php:351
+msgid "Footer First"
+msgstr "القسم الأول من جزء أسفل الموقع"
+
+#: functions.php:353
+msgid "Add widgets here to appear in site Footer First column."
+msgstr "أضف ودجات هنا لكي تظهر في شريط أسفل الموقع في القسم الأول"
+
+#: functions.php:361
+msgid "Footer Second"
+msgstr "القسم الثاني من جزء أسفل الموقع"
+
+#: functions.php:363
+msgid "Add widgets here to appear in site Footer Second column."
+msgstr "أضف ودجات هنا لكي تظهر في شريط أسفل الموقع في القسم الثاني"
+
+#: functions.php:371
+msgid "Footer Third"
+msgstr "القسم الثالث من جزء أسفل الموقع"
+
+#: functions.php:373
+msgid "Add widgets here to appear in site Footer Third column."
+msgstr "أضف ودجات هنا لكي تظهر في شريط أسفل الموقع في القسم الثالث"
+
+#: functions.php:381
+msgid "Footer Fourth"
+msgstr "القسم الرابع من جزء أسفل الموقع"
+
+#: functions.php:383
+msgid "Add widgets here to appear in site Footer Fourth column."
+msgstr "أضف ودجات هنا لكي تظهر في شريط أسفل الموقع في القسم الرابع"
+
+#: functions.php:496 template-parts/pagination.php:13
+msgid "More Posts"
+msgstr "المزيد من المقالات"
+
+#: functions.php:497
+msgid "Loading"
+msgstr "جاري التحميل"
+
+#: inc/widgets/nubia-recent-posts.php:13
+msgid "Recent Posts with images."
+msgstr "أحدث المقالات"
+
+#: inc/widgets/nubia-recent-posts.php:14
+msgid "Nubia: Recent Posts"
+msgstr "نوبيا: أحدث المقالات مع صورة"
+
+#: inc/widgets/nubia-recent-posts.php:106
+msgid "Number of posts to show"
+msgstr "عدد المقالات"
+
+#: inc/widgets/nubia-ad-widget.php:13
+msgid "Nubia: Advertise"
+msgstr "‫نوبيا: الإعلانات"
+
+#: inc/widgets/nubia-ads-widget.php:14
+msgid "Displays advertise unit."
+msgstr "عرض الإعلان"
+
+#: inc/widgets/nubia-ads-widget.php:28 inc/widgets/nubia-ads-widget.php:84
+msgid "Advertisement"
+msgstr "الإعلانات"
+
+#: inc/widgets/nubia-ads-widget.php:37 inc/widgets/nubia-recent-posts.php:103
+#: inc/widgets/nubia-instagram-widget.php:38
+msgid "Title"
+msgstr "العنوان"
+
+#: inc/widgets/nubia-ads-widget.php:41
+msgid "Image URL"
+msgstr "رابط الصورة"
+
+#: inc/widgets/nubia-ads-widget.php:45
+msgid "Destination URL"
+msgstr "عنوان الرابط المقصود"
+
+#: inc/widgets/nubia-instagram-widget.php:13
+msgid "Nubia: Instagram"
+msgstr "نوبيا: الإنستجرام"
+
+#: inc/widgets/nubia-instagram-widget.php:93
+msgid "Instagram"
+msgstr "الإنستجرام"
+
+#: inc/widgets/nubia-instagram-widget.php:14
+msgid "Displays Instagram user photos."
+msgstr "عرض صور المستخدم على الإنستجرام"
+
+#: inc/widgets/nubia-instagram-widget.php:43
+msgid "Photos Limit"
+msgstr "عدد الصور"
+
+#: inc/widgets/nubia-instagram-widget.php:48
+msgid "User ID"
+msgstr ""
+
+#: inc/widgets/nubia-instagram-widget.php:53
+msgid "Access Token"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Blog and Magazine Clean WordPress Theme"
+msgstr "قالب بسيط للمدونات خاص لمنصة الووردبريس"
+
+#. Author of the plugin/theme
+msgid "Aspire Themes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://aspirethemes.com"
+msgstr ""

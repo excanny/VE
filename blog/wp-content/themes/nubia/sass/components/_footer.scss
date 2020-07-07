@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  Components > Footer
+\*------------------------------------*/
+
+.c-footer {
+  margin-top: double($base-spacing-unit);
+  padding: double($base-spacing-unit) 0 $base-spacing-unit 0;
+  border-top: 1px solid $color-border;
+  background-color: $bg-white;
+
+  &__top {
+    margin-top: double($base-spacing-unit);
+    margin-bottom: $base-spacing-unit + quarter($base-spacing-unit);
+    border-bottom: 1px solid $color-border;
+
+    @include mq($from: desktop) {
+      margin-top: double($base-spacing-unit) + $base-spacing-unit;
+    }
+  }
+
+  &__copyright {
+    color: $color-gray;
+    font-size: $font-size-tiny;
+
+    @include mq($from: tablet) {
+      padding: 5px 0;
+    }
+
+    a {
+      color: $color-gray;
+
+      @include attention() {
+        color: $color-brand;
+      }
+    }
+
+    @include mq($until: tablet) {
+      text-align: center;
+      margin-bottom: half($base-spacing-unit);
+    }
+  }
+}

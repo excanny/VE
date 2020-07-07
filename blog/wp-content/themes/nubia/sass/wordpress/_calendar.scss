@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  Components > Calendar
+\*------------------------------------*/
+
+.calendar_wrap {
+  table {
+    margin: 0;
+    font-size: $font-size-small;
+  }
+
+  table,
+  thead th,
+  tfoot td {
+    border: 0;
+  }
+
+  tbody {
+    td {
+      text-align: center;
+
+      &#today,
+      a {
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .pad { background: none; }
+  }
+}

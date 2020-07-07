@@ -1,0 +1,208 @@
+/*------------------------------------*\
+  Components > Widget
+\*------------------------------------*/
+
+.c-widget {
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+
+    &:not(.children) {
+      margin-left: 0;
+    }
+
+    li {
+      position: relative;
+      font-size: $font-size-small;
+      padding-bottom: quarter($base-spacing-unit);
+      margin-bottom: quarter($base-spacing-unit);
+
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      .sub-menu {
+        padding-left: half($base-spacing-unit);
+      }
+
+      .post-count {
+        position: absolute;
+        top: half($base-spacing-unit);
+        right: 0;
+        left: auto;
+        font-size: $font-size-tiny;
+      }
+
+      &:first-child a {
+        padding-top: 0;
+      }
+
+      &:last-child a {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  iframe { display: block !important; }
+
+  p {
+    font-size: $font-size-small;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .wp-caption.alignnone {
+    margin: 0;
+    margin-bottom: half($base-spacing-unit);
+  }
+
+  .rss-date,
+  .post-date {
+    font-size: $font-size-small;
+
+    display: block;
+    color: $color-gray;
+  }
+}
+
+.textwidget {
+  font-size: $font-size-small;
+
+  p:empty {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// Search Widget
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    flex: 8;
+  }
+
+  .search-submit {
+    position: relative;
+    left: -1px;
+    flex: 2;
+  }
+}
+
+// RSS Widget
+
+.widget_rss {
+  ul li {
+    padding-bottom: half($base-spacing-unit);
+    margin-bottom:  half($base-spacing-unit);
+  }
+
+  ul li a {
+    display: block;
+    font-weight: $font-weight-medium;
+  }
+
+  .rss-widget-icon {
+    display: inline-block;
+    margin-right: quarter($base-spacing-unit);
+  }
+
+  .rssSummary {
+    margin-top: quarter($base-spacing-unit);
+  }
+}
+
+// Comments Widget
+
+.widget_recent_comments {
+  .recentcomments {
+    a,
+    .comment-author-link {
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+// Widget Sidebar
+
+.c-widget--sidebar {
+  padding: double($base-spacing-unit);
+  border-left: 1px solid $color-border;
+  border-right: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  counter-reset: widget;
+
+  @include mq($until: tablet) {
+    padding: double($base-spacing-unit);
+    border-right: 1px solid $color-border;
+  }
+
+  @include mq($from: desktop) {
+    padding: double($base-spacing-unit) + half($base-spacing-unit);
+  }
+
+  &:first-child {
+    @include mq($until: tablet) {
+      border-top: 1px solid $color-border;
+    }
+  }
+
+  &__title {
+    margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    letter-spacing: double($global-letter-spacing);
+
+    .rtl & {
+      letter-spacing: unset;
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+// Widget Footer
+
+.c-widget--footer {
+  margin-bottom: double($base-spacing-unit);
+
+  &__title {
+    margin-bottom: $base-spacing-unit;
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+
+    .rtl & {
+      letter-spacing: unset;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  a {
+    color: $color-gray;
+
+    @include attention() {
+      color: $color-brand;
+    }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid $color-gray;
+  }
+
+  .textwidget {
+    color: $color-gray;
+  }
+}

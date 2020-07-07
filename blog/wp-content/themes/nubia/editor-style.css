@@ -1,0 +1,36 @@
+body {
+  font-size: 18px;
+  color: #222222;
+}
+
+address, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, ol, ul, figure, hr, table, fieldset {
+  margin-bottom: 24px;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #222222;
+  transition: 500ms;
+}
+
+a:hover {
+  color: #DB3334;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin-top: 40px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "nubia",
+  "version": "1.0.7",
+  "description": "Blog / Magazine Responsive New WordPress Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "concat": "^3.0.0",
+    "evil-icons": "^1.8.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rtlcss": "^1.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-string-replace": "^1.1.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.6",
+    "jshint-stylish": "^2.2.0",
+    "react": "^15.4.2",
+    "social-logos": "^1.0.1"
+  },
+  "author": "Aspire Themes",
+  "devDependencies": {
+    "dart-sass": "^1.14.3",
+    "gulp": "^4.0.0"
+  }
+}

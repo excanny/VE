@@ -1,0 +1,106 @@
+/*------------------------------------*\
+  Components > Post Hero
+\*------------------------------------*/
+
+.c-post-hero {
+  &__media {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    background-color: $bg-gray;
+
+    @include mq($from: desktop) {
+      margin-right: - double($grid-gutter);
+      border-top-left-radius: $global-border-radius;
+      border-bottom-left-radius: $global-border-radius;
+    }
+
+    .wp-post-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: auto;
+      height: auto;
+
+      max-height: none;
+      max-width: none;
+
+      min-height: 100%;
+      min-width: 100%;
+
+      transform: translate(-50%, -50%);
+      transition: all $global-transition ease-in-out;
+
+      opacity: 0;
+
+      &.is-inview {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+    background-color: $bg-gray;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: $color-border;
+    padding: $base-spacing-unit + half($base-spacing-unit);
+
+    @include mq($from: desktop) {
+      text-align: left;
+    }
+
+    @include mq($from: desktop) {
+      padding: double($base-spacing-unit) (double($base-spacing-unit) + half($base-spacing-unit)) double($base-spacing-unit) (double($base-spacing-unit) + half($base-spacing-unit));
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      height: 100%;
+      border-width: 1px;
+      border-top-right-radius: $global-border-radius;
+      border-bottom-right-radius: $global-border-radius;
+      border-color: $color-border $color-border $color-border $color-white;
+    }
+  }
+
+  &__content--raw {
+    border-width: 1px;
+    border-color: $color-border;
+    text-align: center;
+
+    .c-post-hero__title {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+  }
+
+  &__date {
+    margin-top: quarter($base-spacing-unit);
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+
+    .rtl & {
+      letter-spacing: unset;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+
+    @include mq($from: tablet) {
+      font-size: $font-size-h2;
+    }
+
+    @include mq($from: desktop) {
+      font-size: $font-size-h1;
+      margin-top: auto;
+    }
+  }
+}

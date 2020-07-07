@@ -1,0 +1,91 @@
+/*------------------------------------*\
+  Components > Teaser
+\*------------------------------------*/
+
+.c-teaser {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  padding-left: $base-spacing-unit;
+  padding-top: $base-spacing-unit + half($base-spacing-unit);
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: $base-spacing-unit + half($base-spacing-unit);
+    border-bottom: 1px solid $color-border;
+  }
+
+  &:before {
+    counter-increment: widget;
+    content: counter(widget) '. ';
+    position: relative;
+    left: - $base-spacing-unit;
+    font-size: $font-size-base;
+    font-style: italic;
+    font-family: $font-serif;
+    font-weight: $font-weight-bold;
+    color: $color-brand;
+  }
+
+  &__media {
+    margin-left: $base-spacing-unit;
+    background-color: $bg-gray;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    display: block;
+    width: quadruple($base-spacing-unit);
+    height: triple($base-spacing-unit);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $bg-gray;
+    border-radius: $global-border-radius;
+
+    &.js-fadein {
+      opacity: 0;
+    }
+
+    &.is-inview {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    display: inline;
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $global-transition ease-in-out;
+  }
+
+  &__date {
+    display: block;
+    line-height: 1;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-regular;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+    margin-top: half($base-spacing-unit);
+
+    .rtl & {
+      letter-spacing: unset;
+    }
+  }
+
+  @include attention() {
+    color: $color-text;
+
+    .c-teaser__title {
+      border-bottom: 1px solid $color-text;
+    }
+  }
+}

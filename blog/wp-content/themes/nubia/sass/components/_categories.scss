@@ -1,0 +1,22 @@
+/*------------------------------------*\
+  Components > Categories
+\*------------------------------------*/
+
+.c-categories {
+  margin-top: $base-spacing-unit;
+
+  a {
+    display: inline-block;
+    padding: quarter($base-spacing-unit) $base-spacing-unit;
+    margin: 0 half($base-spacing-unit) half($base-spacing-unit) 0;
+    color: $color-gray;
+    border: 1px solid $color-border;
+    font-size: $font-size-small;
+    background-color: $bg-white;
+
+    @include attention() {
+      color: $color-brand;
+      text-decoration: none;
+    }
+  }
+}

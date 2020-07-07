@@ -1,0 +1,189 @@
+/*------------------------------------*\
+  Components > Social Icons / Footer
+\*------------------------------------*/
+
+.c-social-icons {
+  text-align: center;
+
+  @include mq($from: tablet) {
+    text-align: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: flex;
+    color: $color-gray;
+    transition: $global-transition;
+
+    @include attention() {
+      color: $color-brand;
+    }
+
+    &:before {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      content: '-';
+
+      font-family: social-logos;
+      font-size: $font-size-base;
+      text-decoration: inherit;
+
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  a[href*='amazon.com']:before {
+    content:'\f600';
+  }
+
+  a[href*='behance.com']:before {
+    content:'\f101';
+  }
+
+  a[href*='blogger.com']:before {
+    content:'\f602';
+  }
+
+  a[href*='codepen.com']:before {
+    content:'\f216';
+  }
+
+  a[href*='dribbble.com']:before {
+    content:'\f201';
+  }
+
+  a[href*='dropbox.com']:before {
+    content:'\f225';
+  }
+
+  a[href*='eventbrite.com']:before {
+    content:'\f603';
+  }
+
+  a[href*='facebook.com']:before {
+    content:'\f203';
+  }
+
+  a[href*='flickr.com']:before {
+    content:'\f211';
+  }
+
+  a[href*='foursquare.com']:before {
+    content:'\f226';
+  }
+
+  a[href*='ghost.org']:before {
+    content:'\f61c';
+  }
+
+  a[href*='github.com']:before {
+    content:'\f200';
+  }
+
+  a[href*='plus.google.com']:before {
+    content:'\f218';
+  }
+
+  a[href*='google.com']:before {
+    content:'\f103';
+  }
+
+  a[href*='instagram.com']:before {
+    content:'\f215';
+  }
+
+  a[href*='linkedin.com']:before {
+    content:'\f207';
+  }
+
+  a[href*='mailto:']:before {
+    content:'\f410';
+  }
+  a[href$='/feed/']:before {
+	  content:"\f413";
+  }
+
+  a[href*='medium.com']:before {
+    content:'\f623';
+  }
+
+  a[href*='path.com']:before {
+    content:'\f219';
+  }
+
+  a[href*='pinterest.com']:before {
+    content:'\f209';
+  }
+
+  a[href*='pocket.com']:before {
+    content:'\f224';
+  }
+
+  a[href*='polldaddy.com']:before {
+    content:'\f217';
+  }
+
+  a[href*='reddit.com']:before {
+    content:'\f222';
+  }
+
+  a[href*='skype.com']:before {
+    content:'\f220';
+  }
+
+  a[href*='spotify.com']:before {
+    content:'\f515';
+  }
+
+  a[href*='squarespace.com']:before {
+    content:'\f605';
+  }
+
+  a[href*='stumbleupon.com']:before {
+    content:'\f223';
+  }
+
+  a[href*='telegram.com']:before {
+    content:'\f606';
+  }
+
+  a[href*='tumblr.com']:before {
+    content:'\f214';
+  }
+
+  a[href*='twitch.com']:before {
+    content:'\f516';
+  }
+
+  a[href*='twitter.com']:before {
+    content:'\f202';
+  }
+
+  a[href*='vimeo.com']:before {
+    content:'\f212';
+  }
+
+  a[href*='whatsapp.com']:before {
+    content:'\f608';
+  }
+
+  a[href*='wordpress.com']:before,
+  a[href*='wordpress.org']:before {
+    content:'\f205';
+  }
+
+  a[href*='xanga.com']:before {
+    content:'\f609';
+  }
+
+  a[href*='youtube.com']:before {
+    content:'\f213';
+  }
+}

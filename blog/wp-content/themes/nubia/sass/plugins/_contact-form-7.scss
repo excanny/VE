@@ -1,0 +1,28 @@
+/*------------------------------------*\
+  Plugins > Contact Form 7
+\*------------------------------------*/
+
+div.wpcf7 {
+  p {
+    color: $color-gray;
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+  }
+
+  label {
+    .rtl & {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  img.ajax-loader {
+    display: inline-block;
+  }
+
+  &-response-output {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+  }
+}

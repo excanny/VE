@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  Components > Dropcap
+\*------------------------------------*/
+
+body:not(.rtl) .c-content {
+  > p:first-child {
+    &::first-letter {
+      float: left;
+      height: 42px;
+      margin-top: 6px;
+      margin-right: half($base-spacing-unit);
+      font-size: 58px;
+      line-height: 42px;
+      font-style: normal;
+      font-weight: $font-weight-regular;
+    }
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}

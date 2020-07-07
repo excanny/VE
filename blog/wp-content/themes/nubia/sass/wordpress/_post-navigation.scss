@@ -1,0 +1,93 @@
+/*------------------------------------*\
+  WordPress > Post Navigation
+\*------------------------------------*/
+
+.post-navigation {
+  .meta-nav {
+    display: block;
+    position: relative;
+    padding-bottom: quarter($base-spacing-unit);
+  }
+
+  .meta-nav,
+  .post-title {
+    font-size: $font-size-small;
+  }
+
+  .post-title {
+    font-weight: $font-weight-medium;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $global-transition ease-in-out;
+  }
+
+  .nav-links {
+    @include clearfix();
+  }
+
+  .pagination__text {
+    position: relative;
+    color: $color-gray;
+    font-size: $font-size-tiny;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+
+    .rtl & {
+      letter-spacing: unset;
+    }
+  }
+
+  .pagination__icon {
+    position: relative;
+    vertical-align: bottom;
+    color: $color-gray;
+  }
+
+  .nav-previous,
+  .nav-next {
+    @include mq($from: tablet) {
+      max-width: 50%;
+    }
+  }
+
+  .nav-previous {
+    float: left;
+    text-align: left;
+
+    .pagination__text,
+    .pagination__icon { left: - half($base-spacing-unit); }
+
+    .pagination__icon {
+      .rtl & { transform: rotate(-180deg); }
+    }
+
+    @include attention() {
+      color: $color-text;
+
+      .post-title {
+        color: $color-text;
+        border-bottom: 1px solid $color-text;
+      }
+    }
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+
+    .pagination__text,
+    .pagination__icon { right: - half($base-spacing-unit); }
+
+    .pagination__icon {
+      .rtl & { transform: rotate(180deg); }
+    }
+
+    @include attention() {
+      color: $color-text;
+
+      .post-title {
+        color: $color-text;
+        border-bottom: 1px solid $color-text;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*------------------------------------*\
+  Content Width specific classes
+  http://codex.wordpress.org/Content_Width
+\*------------------------------------*/
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+div[class^='embed'] {
+  margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+}

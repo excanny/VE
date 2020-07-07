@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  Components > Widge Author
+\*------------------------------------*/
+
+.c-widget-author {
+  text-align: center;
+
+  &__media {
+    margin-bottom: $base-spacing-unit;
+  }
+
+  .avatar {
+    margin: 0 auto;
+    display: block;
+    width: quadruple($base-spacing-unit) + double($base-spacing-unit);
+    height: quadruple($base-spacing-unit) + double($base-spacing-unit);
+    border-radius: 100%;
+    border: quarter($base-spacing-unit) solid $bg-gray;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+  }
+
+  &__bio {
+    margin-bottom: 0;
+    margin-top: half($base-spacing-unit);
+    font-size: $font-size-small;
+  }
+}

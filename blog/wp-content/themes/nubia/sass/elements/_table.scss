@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  Elements > Table
+\*------------------------------------*/
+
+table {
+  width: 100%;
+  font-size: $font-size-medium;
+}
+
+table,
+th,
+td {
+  border: 1px solid $color-border;
+}
+
+th,
+td {
+  padding: half($base-spacing-unit);
+}

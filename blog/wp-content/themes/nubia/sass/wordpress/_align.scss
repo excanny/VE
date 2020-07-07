@@ -1,0 +1,17 @@
+/*------------------------------------*\
+  WordPress > Align
+\*------------------------------------*/
+
+.aligncenter {
+  margin: 0 auto;
+}
+
+.alignright {
+  float: right;
+  margin-left: $base-spacing-unit + half($base-spacing-unit);
+}
+
+.alignleft {
+  float: left;
+  margin-right: $base-spacing-unit + half($base-spacing-unit);
+}

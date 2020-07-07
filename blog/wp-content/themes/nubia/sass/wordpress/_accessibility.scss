@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  WordPress > Accessibility
+\*------------------------------------*/
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+
+  &:focus {
+    clip: auto !important;
+    padding: $base-spacing-unit;
+    top: 5px;
+    left: 5px;
+    width: auto;
+    height: auto;
+    display: block;
+    z-index: 100000; // Above WP toolbar.
+    line-height: normal;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    color: $color-brand;
+    background-color: $color-white;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+  }
+}

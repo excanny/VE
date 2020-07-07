@@ -1,0 +1,27 @@
+/*------------------------------------*\
+  WordPress > Caption
+\*------------------------------------*/
+
+.wp-caption {
+  max-width: 100%;
+  margin-bottom: $base-spacing-unit;
+
+  &.alignleft {
+    margin-right: double($base-spacing-unit);
+  }
+
+  &.alignright {
+    margin-left: double($base-spacing-unit);
+  }
+
+  img {
+    margin-bottom: half($base-spacing-unit);
+  }
+
+  .wp-caption-text {
+    padding: 0 $base-spacing-unit;
+    color: $color-gray;
+    font-style: italic;
+    font-family: $font-sans-serif;
+  }
+}

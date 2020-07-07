@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  Components > Content
+\*------------------------------------*/
+
+.c-content {
+  margin-bottom: double($base-spacing-unit);
+  font-family: $font-serif;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  a:not(.c-btn) {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+
+    @include attention() {
+      color: $color-brand;
+    }
+  }
+
+  .wp-caption-text,
+  figure figcaption {
+    width: 100%;
+    text-align: center;
+    color: $color-gray;
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+    margin: 0;
+    padding: $base-spacing-unit $base-spacing-unit 0 $base-spacing-unit;
+  }
+
+  p,
+  dd,
+  ol,
+  ul {
+    font-size: $font-size-base;
+  }
+
+  blockquote p {
+    font-size: $font-size-h4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-sans-serif;
+    font-weight: $font-weight-bold;
+    margin-bottom: half($base-spacing-unit);
+
+    &:not(:first-child) {
+      margin-top: half($base-spacing-unit) + double($base-spacing-unit);
+    }
+  }
+
+  address, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, ol, ul, figure, hr, table, fieldset {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dd,
+  ol,
+  ul {
+    -webkit-padding-start: quarter($base-spacing-unit);
+  }
+}

@@ -1,0 +1,9 @@
+/*------------------------------------*\
+  Plugins > Photoswipe Gallery
+\*------------------------------------*/
+
+.photoswipe-gallery-caption {
+  padding: half(quarter($base-spacing-unit));
+  font-size: $font-size-small;
+  font-family: $font-sans-serif;
+}

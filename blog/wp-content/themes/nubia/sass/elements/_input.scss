@@ -1,0 +1,54 @@
+/*------------------------------------*\
+  Elements > Inputs
+\*------------------------------------*/
+
+$input-border: $color-border;
+$input-border-focused: $color-gray;
+
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+textarea,
+select {
+  width: 100%;
+  display: block;
+  padding: $base-spacing-unit;
+  border: 1px solid $color-border;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  background-color: $color-white;
+  line-height: initial;
+  font-size: $font-size-small;
+  font-family: $font-sans-serif;
+  transition: $global-transition;
+
+  &::placeholder {
+    opacity: 1;
+    color: $color-gray;
+  }
+
+  &:focus {
+    border-color: $input-border-focused;
+  }
+}
+
+select {
+  background-image: url(images/icon-form-dropdown.svg);
+  background-position: right $base-spacing-unit center;
+  background-repeat: no-repeat;
+  padding-right: $base-spacing-unit;
+  border-radius: 0;
+  appearance: none;
+}

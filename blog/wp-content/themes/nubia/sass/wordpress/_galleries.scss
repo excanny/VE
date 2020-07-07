@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  WordPress > Galleries
+\*------------------------------------*/
+
+.gallery {
+  margin-bottom: $base-spacing-unit + half($base-spacing-unit);
+}
+
+.gallery-item {
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+
+  img {
+    width: 100%;
+    border: half(quarter($base-spacing-unit)) solid $color-white;
+  }
+
+  .gallery-columns-1 & { width: 100%; }
+  .gallery-columns-2 & { width: 50%; }
+  .gallery-columns-3 & { width: 33.33%; }
+  .gallery-columns-4 & { width: 25%; }
+  .gallery-columns-5 & { width: 20%; }
+  .gallery-columns-6 & { width: 16.66%; }
+  .gallery-columns-7 & { width: 14.28%; }
+  .gallery-columns-8 & { width: 12.5%; }
+  .gallery-columns-9 & { width: 11.11%; }
+}
+
+.gallery-caption {
+  padding: half(quarter($base-spacing-unit));
+  font-size: $font-size-small;
+  font-family: $font-sans-serif;
+}
